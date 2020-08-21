@@ -74,13 +74,12 @@ public class PlayerController : MonoBehaviour
         {
             SingleJump();
             jumpTimeCounter -= Time.deltaTime;
-            Debug.Log(jumpTimeCounter);
         }
         //reset jump time counter if player doesn't hold space anymore
-        if (Input.GetKeyUp(KeyCode.Space))
-        {
-            jumpTimeCounter = 0;
-        }
+        //if (Input.GetKeyUp(KeyCode.Space))
+        //{
+        //    jumpTimeCounter = 0;
+        //}
     }
 
     void SingleJump()
